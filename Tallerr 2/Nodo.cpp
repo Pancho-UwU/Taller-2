@@ -81,11 +81,42 @@ Nodo::Nodo(int nivel,int vidaP,int ataqueP,int armaduraP)
 
 	}
 
-
-
-
-
 }
+/// <summary>
+/// Get del hijo derecho
+/// </summary>
+/// <retorna el hijo derecho si existe, si no, retorna null>
+Nodo* Nodo::getHijoDer()
+{
+	return hijoDer;
+}
+Nodo* Nodo::getHijoIzq()
+{
+	return hijoIzq;
+}
+int Nodo::getNivel()
+{
+	return nivel;
+}
+bool Nodo::getCoT()
+{
+	return CoT;
+}
+int Nodo::getVidaP() { return vidaP; }
+int Nodo::getAtaqueP() { return ataqueP; }
+int Nodo::getArmaduraP() { return armaduraP; }
+int Nodo::getCEnemigos() { return cEnemigos; }
+int Nodo::getVidaE() { return vidaE; }
+int Nodo::getAtaqueE() { return ataqueE; }
+int Nodo::getDefenzaE() { return defenzaE; }
+
+void Nodo::setHijoDer(Nodo* hijoDer){ this->hijoDer = hijoDer; }
+void Nodo::setHijoIzq(Nodo* hijoIzq) { this->hijoIzq = hijoIzq; }
+void Nodo::setNivel(int nivel) { this->nivel = nivel; }
+void Nodo::setCoT(bool cot) { this->CoT = cot; }
+
+
+
 
 
 
