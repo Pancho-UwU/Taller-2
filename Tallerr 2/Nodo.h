@@ -13,6 +13,8 @@ private:
 	/// Variable que identifica si es caverna o taberna.
 	/// </summary>
 	bool CoT;
+	bool fueVisitado;
+	bool nodoAct;
 	int vidaP;
 	int ataqueP;
 	int armaduraP;
@@ -30,8 +32,9 @@ public:
 	Nodo* getHijoIzq();
 	Nodo* getHijoDer();
 
-	int getNivel();
 	bool getCoT();
+	bool getFueVisitado();
+	int getNivel();
 	int getVidaP();
 	int getAtaqueP();
 	int getArmaduraP();
@@ -39,6 +42,7 @@ public:
 	int getVidaE();
 	int getAtaqueE();
 	int getDefenzaE();
+	bool getNodoAct();
 
 	void setHijoDer(Nodo* NodoHijoDer);
 	void setHijoIzq(Nodo* NodoHijoIzq);
@@ -46,6 +50,7 @@ public:
 
 	void setNivel(int nivel);
 	void setCoT(bool cot );
+	void setFueVisitado(bool fueVisitado);
 	void setVidaP(int vida);
 	void setAtaqueP(int ataque);
 	void setArmaduraP(int armadura);
@@ -53,6 +58,7 @@ public:
 	void setVidaE(int vidaE);
 	void setAtaqueE(int ataqueE);
 	void setDefenzaE(int defenzaE);
+	void setNodoAct(bool nodoAct);
 
 };
 

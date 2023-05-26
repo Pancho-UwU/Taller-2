@@ -127,10 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ArbolBinCom.cpp" />
     <ClCompile Include="Nodo.cpp" />
     <ClCompile Include="Tallerr 2.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ArbolBinCom.h" />
     <ClInclude Include="Nodo.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

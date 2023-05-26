@@ -109,12 +109,22 @@ int Nodo::getCEnemigos() { return cEnemigos; }
 int Nodo::getVidaE() { return vidaE; }
 int Nodo::getAtaqueE() { return ataqueE; }
 int Nodo::getDefenzaE() { return defenzaE; }
+bool Nodo::getFueVisitado() { return fueVisitado; }
+bool Nodo::getNodoAct() { return nodoAct; }
 
 void Nodo::setHijoDer(Nodo* hijoDer){ this->hijoDer = hijoDer; }
 void Nodo::setHijoIzq(Nodo* hijoIzq) { this->hijoIzq = hijoIzq; }
 void Nodo::setNivel(int nivel) { this->nivel = nivel; }
 void Nodo::setCoT(bool cot) { this->CoT = cot; }
-
+void Nodo::setVidaP(int vida) { this->vidaP = vida; }
+void Nodo::setAtaqueP(int ataque) { this->ataqueP = ataque; }
+void Nodo::setArmaduraP(int armadura) { this->armaduraP = armadura; }
+void Nodo::setCEnemigos(int cEnemigos) { this->cEnemigos = cEnemigos; }
+void Nodo::setVidaE(int vidaE) { this->vidaE = vidaE; }
+void Nodo::setAtaqueE(int ataque) { this->ataqueE = ataqueE; }
+void Nodo::setDefenzaE(int aramaduraE) { this->defenzaE = aramaduraE; }
+void Nodo::setFueVisitado(bool fueVisitado) { this->fueVisitado = fueVisitado; }
+void Nodo::setNodoAct(bool nodoAct) { this->nodoAct = nodoAct; }
 
 
 
